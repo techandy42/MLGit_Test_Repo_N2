@@ -1,0 +1,5 @@
+# Built artifacts
+__pycache__/
+
+# MLGit folder
+.mlgit/

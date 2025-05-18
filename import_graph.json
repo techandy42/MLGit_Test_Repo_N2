@@ -1,0 +1,49 @@
+{
+    "circular_import_a.py": [
+        "circular_import_b.py"
+    ],
+    "circular_import_b.py": [
+        "circular_import_a.py"
+    ],
+    "circular_import_c.py": [
+        "circular_import_d.py"
+    ],
+    "circular_import_d.py": [
+        "circular_import_c.py"
+    ],
+    "diamond_circular_import_a.py": [],
+    "diamond_circular_import_b.py": [
+        "diamond_circular_import_a.py"
+    ],
+    "diamond_circular_import_c.py": [
+        "diamond_circular_import_a.py"
+    ],
+    "diamond_circular_import_d.py": [
+        "diamond_circular_import_a.py",
+        "diamond_circular_import_b.py",
+        "diamond_circular_import_c.py"
+    ],
+    "outer_module_consumer_a.py": [
+        "src/subdirectory_1/inner_module_producer_a.py"
+    ],
+    "outer_module_producer_a.py": [],
+    "src/app.py": [],
+    "src/definitions.py": [],
+    "src/external_modules.py": [],
+    "src/subdirectory_1/inner_module_consumer_a.py": [
+        "outer_module_producer_a.py"
+    ],
+    "src/subdirectory_1/inner_module_producer_a.py": [],
+    "src/subdirectory_2/inner_module_circular_import_a.py": [],
+    "src/subdirectory_2/inner_module_circular_import_b.py": [],
+    "src/utils.py": [],
+    "triple_circular_import_a.py": [
+        "triple_circular_import_c.py"
+    ],
+    "triple_circular_import_b.py": [
+        "triple_circular_import_a.py"
+    ],
+    "triple_circular_import_c.py": [
+        "triple_circular_import_b.py"
+    ]
+}
