@@ -1,9 +1,4 @@
-import sys
-import os
-abspath = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.append(abspath)
-from subdirectory_2.inner_module_circular_import_a import imcia_dummy_producer_1
-sys.path.remove(abspath)
+from ..subdirectory_2.inner_module_circular_import_a import imcia_dummy_producer_1
 
 def impa_dummy_producer_1():
     imcia_dummy_producer_1()

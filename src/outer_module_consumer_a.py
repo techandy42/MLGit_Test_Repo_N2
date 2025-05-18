@@ -1,4 +1,4 @@
-from src.subdirectory_1.inner_module_producer_a import impa_dummy_producer_1
+from .app.subdirectory_1.inner_module_producer_a import impa_dummy_producer_1
 
 def omca_dummy_consumer_1():
     impa_dummy_producer_1()

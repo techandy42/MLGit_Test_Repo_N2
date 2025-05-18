@@ -1,4 +1,4 @@
-from circular_import_a import cia_dummy_producer_1
+from .circular_import_a import cia_dummy_producer_1
 
 def cib_dummy_producer_1():
     print("circular_import_b.cib_dummy_producer_1()")

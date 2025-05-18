@@ -1,6 +1,6 @@
 import os
 from math import sqrt, floor as fl, pi as PI
-from utils import (
+from .utils import (
     utils_dummy_func_1,
     utils_dummy_func_2 as udf2,
     UtilsDummyClass1,

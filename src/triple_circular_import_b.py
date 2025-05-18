@@ -2,7 +2,7 @@ def tib_dummy_producer_1():
     print("triple_circular_import_a.tib_dummy_producer_1()")
 
 def tib_dummy_consumer_1():
-    from triple_circular_import_a import tia_dummy_producer_1
+    from .triple_circular_import_a import tia_dummy_producer_1
     tia_dummy_producer_1()
     print("triple_circular_import_a.tib_dummy_consumer_1()")
 

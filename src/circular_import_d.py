@@ -2,7 +2,7 @@ def cid_dummy_producer_1():
     print("circular_import_a.cid_dummy_producer_1()")
 
 def cid_dummy_consumer_1():
-    from circular_import_c import cic_dummy_producer_1
+    from .circular_import_c import cic_dummy_producer_1
     cic_dummy_producer_1()
     print("circular_import_a.cid_dummy_consumer_1()")
 
